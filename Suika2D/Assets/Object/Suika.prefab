@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 1457850838424378243}
   - component: {fileID: 4417775208203812718}
   - component: {fileID: 8100538222022606677}
+  - component: {fileID: 2793594243020622758}
+  - component: {fileID: -1951150497938353492}
   m_Layer: 0
   m_Name: Suika
   m_TagString: suika
@@ -28,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 378134010052557033}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.13, y: 2.25, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -98,7 +100,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 5
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -148,3 +150,29 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &2793594243020622758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378134010052557033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cb5289d819fa4405b63c8554c1bba31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-1951150497938353492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378134010052557033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9841b8059d1854879a1a7677f4b2b6b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentStackManager: {fileID: 0}
+  childStackManagers: []

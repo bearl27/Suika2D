@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 6220512062514453062}
   - component: {fileID: 6667543146075649587}
   - component: {fileID: 1733524960752161841}
-  - component: {fileID: 5603541386844408985}
   m_Layer: 0
   m_Name: Orange
   m_TagString: orange
@@ -31,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -100,7 +99,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 2
+  m_Mass: 3
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -163,17 +162,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Peach: {fileID: 2516469681601240178, guid: 3b1f626d810024c18a726903ca225b1b, type: 3}
---- !u!114 &5603541386844408985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4436037482301423763}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9841b8059d1854879a1a7677f4b2b6b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentStackManager: {fileID: 5603541386844408985}
-  childStackManagers: []

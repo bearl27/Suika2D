@@ -5,6 +5,10 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     static public int score = 0;
+    static public bool gameOver = false;
+    private bool gameOverTime = false;
+    private float time = 0.0f;
+    public GameObject gameOverGUI;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,5 +23,29 @@ public class GameManager : MonoBehaviour
             Application.Quit();
         }
 
+        if(gameOverTime)
+        {
+            time += Time.deltaTime;
+        }
+        if(time > 1.0f)
+        {
+            gameOver = true;
+        }
+        if(gameOver)
+        {
+            Destroy(GameObject.Find("Player"));
+            gameOverGUI.SetActive(true);
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        gameOverTime = true;
+    }
+
+    void OnTriggerExit2D(Collider2D collider)
+    {
+        gameOverTime = false;
+        time = 0.0f;
     }
 }

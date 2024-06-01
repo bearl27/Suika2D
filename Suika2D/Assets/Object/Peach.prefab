@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 3308725794179963640}
   - component: {fileID: 9216451156931841905}
   - component: {fileID: 523043081540637570}
-  - component: {fileID: -4673276086593590704}
   m_Layer: 0
   m_Name: Peach
   m_TagString: peach
@@ -163,17 +162,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Suika: {fileID: 378134010052557033, guid: ef2ba47c7aa684239b80430e28dae456, type: 3}
---- !u!114 &-4673276086593590704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2516469681601240178}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9841b8059d1854879a1a7677f4b2b6b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentStackManager: {fileID: -4673276086593590704}
-  childStackManagers: []

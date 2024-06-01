@@ -5,6 +5,15 @@ using UnityEngine;
 public class OrangeCollision : MonoBehaviour
 {
     public GameObject Peach;
+
+    void Update()
+    {
+        if(GameManager.gameOver)
+        {
+            Destroy(gameObject);
+        }
+    }
+
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "orange")

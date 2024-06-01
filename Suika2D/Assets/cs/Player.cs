@@ -11,6 +11,8 @@ public class Player : MonoBehaviour
     public GameObject orange;
     public GameObject kaki;
     private GameObject currentFruit;
+    public float plus = 0.2f;
+    private float spaceDelay = 0.5f;
 
     void Start()
     {
@@ -19,6 +21,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        spaceDelay -= Time.deltaTime;
         //ad movement
         if(transform.position.x < maxX)
         {
@@ -35,10 +38,13 @@ public class Player : MonoBehaviour
             }
         }
         //space key
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (spaceDelay < 0 && Input.GetKeyDown(KeyCode.Space))
         {
+            spaceDelay = 0.5f;
             //currentFruitのrigidbodyをkinematicをfalseにする
             //currentFruit.GetComponent<Rigidbody2D>().isKinematic = false;
+            transform.position += new Vector3(plus, 0, 0) * Time.deltaTime * speed;
+            plus *= -1;
             //currentFruitの位置に生成
             Instantiate(currentFruit, transform.position, transform.rotation);
 

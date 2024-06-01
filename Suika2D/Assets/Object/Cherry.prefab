@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 8149545890068621119}
   - component: {fileID: 3546746672705249401}
   - component: {fileID: 5972406704149290279}
-  - component: {fileID: -2075420753833933254}
   m_Layer: 0
   m_Name: Cherry
   m_TagString: cherry
@@ -163,17 +162,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Kaki: {fileID: 2479108315320362895, guid: 96259e9a8fee1496296692fbaf7992aa, type: 3}
---- !u!114 &-2075420753833933254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6341863991818897226}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9841b8059d1854879a1a7677f4b2b6b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentStackManager: {fileID: -2075420753833933254}
-  childStackManagers: []

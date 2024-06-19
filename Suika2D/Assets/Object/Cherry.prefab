@@ -162,3 +162,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Kaki: {fileID: 2479108315320362895, guid: 96259e9a8fee1496296692fbaf7992aa, type: 3}
+  collisionSound: {fileID: 8300000, guid: c23a5c88e8eb24161acdb536c4aa4e8d, type: 3}

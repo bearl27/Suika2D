@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SuikaCollision : MonoBehaviour
 {
+    public AudioClip collisionSound;
 
     void Update()
     {
@@ -16,6 +17,7 @@ public class SuikaCollision : MonoBehaviour
     {
         if (collision.gameObject.tag == "suika")
         {
+            AudioSource.PlayClipAtPoint(collisionSound, transform.position);
             Destroy(gameObject);
             GameManager.score += 100;
         }

@@ -325,7 +325,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.0007391951}
+  m_AnchoredPosition: {x: 0, y: 52.813663}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &261395994
@@ -1894,7 +1894,7 @@ RectTransform:
   m_Father: {fileID: 200104416}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 0.7029466}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2217,7 +2217,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1232557920}
   m_Direction: 2
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.7029466
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2447,7 +2447,7 @@ MonoBehaviour:
   cherry: {fileID: 6341863991818897226, guid: 8151637124fa44cbc81b90a078f17dfd, type: 3}
   orange: {fileID: 4436037482301423763, guid: b787556f3b22b4a01ac815331b8b9a38, type: 3}
   kaki: {fileID: 2479108315320362895, guid: 96259e9a8fee1496296692fbaf7992aa, type: 3}
-  plus: 0
+  plus: 0.2
 --- !u!212 &1517502601
 SpriteRenderer:
   m_ObjectHideFlags: 0

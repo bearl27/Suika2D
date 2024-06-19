@@ -162,3 +162,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Suika: {fileID: 378134010052557033, guid: ef2ba47c7aa684239b80430e28dae456, type: 3}
+  collisionSound: {fileID: 8300000, guid: c23a5c88e8eb24161acdb536c4aa4e8d, type: 3}

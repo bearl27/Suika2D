@@ -5,6 +5,7 @@ using UnityEngine;
 public class CherryCollision : MonoBehaviour
 {
     public GameObject Kaki;
+    public AudioClip collisionSound;
 
     void Update()
     {
@@ -27,6 +28,7 @@ public class CherryCollision : MonoBehaviour
             }
             else
             {
+                AudioSource.PlayClipAtPoint(collisionSound, transform.position);
                 Destroy(gameObject);
             }
         }

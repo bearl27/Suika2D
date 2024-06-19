@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     private GameObject currentFruit;
     public float plus = 0.2f;
     private float spaceDelay = 0.5f;
+    public AudioClip apper;
 
     void Start()
     {
@@ -47,6 +48,8 @@ public class Player : MonoBehaviour
             plus *= -1;
             //currentFruitの位置に生成
             Instantiate(currentFruit, transform.position, transform.rotation);
+            //audio
+            AudioSource.PlayClipAtPoint(apper, transform.position);
 
             //cherry, orange, kakiからランダムで1つ選ぶ
             int random = Random.Range(0, 3);

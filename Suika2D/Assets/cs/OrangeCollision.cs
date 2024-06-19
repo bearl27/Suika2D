@@ -5,6 +5,7 @@ using UnityEngine;
 public class OrangeCollision : MonoBehaviour
 {
     public GameObject Peach;
+    public AudioClip collisionSound;
 
     void Update()
     {
@@ -27,6 +28,7 @@ public class OrangeCollision : MonoBehaviour
             }
             else
             {
+                AudioSource.PlayClipAtPoint(collisionSound, transform.position);
                 Destroy(gameObject);
             }
         }

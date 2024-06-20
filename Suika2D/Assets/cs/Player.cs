@@ -41,7 +41,7 @@ public class Player : MonoBehaviour
         //space key
         if (spaceDelay < 0 && Input.GetKeyDown(KeyCode.Space))
         {
-            spaceDelay = 0.5f;
+            spaceDelay = 1.0f;
             //currentFruitのrigidbodyをkinematicをfalseにする
             //currentFruit.GetComponent<Rigidbody2D>().isKinematic = false;
             transform.position += new Vector3(plus, 0, 0) * Time.deltaTime * speed;

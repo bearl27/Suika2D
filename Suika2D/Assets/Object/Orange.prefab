@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6220512062514453062}
   - component: {fileID: 6667543146075649587}
   - component: {fileID: 1733524960752161841}
+  - component: {fileID: 1008155011703950324}
   m_Layer: 0
   m_Name: Orange
   m_TagString: orange
@@ -163,3 +164,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Peach: {fileID: 2516469681601240178, guid: 3b1f626d810024c18a726903ca225b1b, type: 3}
   collisionSound: {fileID: 8300000, guid: c23a5c88e8eb24161acdb536c4aa4e8d, type: 3}
+--- !u!114 &1008155011703950324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4436037482301423763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24b18ef77650349ab9e9a9631782dc78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

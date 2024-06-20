@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3308725794179963640}
   - component: {fileID: 9216451156931841905}
   - component: {fileID: 523043081540637570}
+  - component: {fileID: -3446713562857950114}
   m_Layer: 0
   m_Name: Peach
   m_TagString: peach
@@ -163,3 +164,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Suika: {fileID: 378134010052557033, guid: ef2ba47c7aa684239b80430e28dae456, type: 3}
   collisionSound: {fileID: 8300000, guid: c23a5c88e8eb24161acdb536c4aa4e8d, type: 3}
+--- !u!114 &-3446713562857950114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2516469681601240178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24b18ef77650349ab9e9a9631782dc78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

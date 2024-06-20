@@ -7,13 +7,6 @@ public class PeachCollision : MonoBehaviour
     public GameObject Suika;
     public AudioClip collisionSound;
 
-    void Update()
-    {
-        if(GameManager.gameOver)
-        {
-            Destroy(gameObject);
-        }
-    }
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "peach")

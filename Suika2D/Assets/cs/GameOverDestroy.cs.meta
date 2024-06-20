@@ -1,11 +1,9 @@
 fileFormatVersion: 2
-guid: d3504ff41bad7471ebbb06b0e05a33df
+guid: 24b18ef77650349ab9e9a9631782dc78
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - Kaki: {instanceID: 0}
-  - collisionSound: {fileID: 8300000, guid: c23a5c88e8eb24161acdb536c4aa4e8d, type: 3}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

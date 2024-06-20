@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1596889501923733225}
   - component: {fileID: 4388946974161222828}
   - component: {fileID: 4949903236798922988}
+  - component: {fileID: 3058956674638065780}
   m_Layer: 0
   m_Name: Kaki
   m_TagString: kaki
@@ -163,3 +164,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Orange: {fileID: 4436037482301423763, guid: b787556f3b22b4a01ac815331b8b9a38, type: 3}
   collisionSound: {fileID: 8300000, guid: c23a5c88e8eb24161acdb536c4aa4e8d, type: 3}
+--- !u!114 &3058956674638065780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2479108315320362895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24b18ef77650349ab9e9a9631782dc78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

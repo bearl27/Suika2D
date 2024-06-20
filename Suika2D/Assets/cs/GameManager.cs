@@ -9,13 +9,14 @@ public class GameManager : MonoBehaviour
     private bool gameOverTime = false;
     private float time = 0.0f;
     public GameObject gameOverGUI;
-    // Start is called before the first frame update
+    public GameObject player;
+
     void Start()
     {
-
+        score = 0;
+        gameOver = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKey(KeyCode.Escape))
@@ -33,8 +34,11 @@ public class GameManager : MonoBehaviour
         }
         if(gameOver)
         {
-            Destroy(GameObject.Find("Player"));
+            player.SetActive(false);
             gameOverGUI.SetActive(true);
+        }else{
+            player.SetActive(true);
+            gameOverGUI.SetActive(false);
         }
     }
 

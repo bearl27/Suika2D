@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4417775208203812718}
   - component: {fileID: 8100538222022606677}
   - component: {fileID: 2793594243020622758}
+  - component: {fileID: 1111985971601683994}
   m_Layer: 0
   m_Name: Suika
   m_TagString: suika
@@ -162,3 +163,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collisionSound: {fileID: 8300000, guid: c23a5c88e8eb24161acdb536c4aa4e8d, type: 3}
+--- !u!114 &1111985971601683994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378134010052557033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24b18ef77650349ab9e9a9631782dc78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

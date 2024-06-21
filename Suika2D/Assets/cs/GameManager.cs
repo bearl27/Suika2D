@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
         {
             time += Time.deltaTime;
         }
-        if(time > 1.0f)
+        if(time > 2.0f)
         {
             gameOver = true;
         }

@@ -5,24 +5,18 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public float maxX;
-    public float minX;
     public float speed;
-    public GameObject cherry;
-    public GameObject orange;
-    public GameObject kaki;
-    private GameObject currentFruit;
+    public GameObject[] FruitsList;
     public float plus = 0.2f;
-    private float spaceDelay = 0.5f;
-    public AudioClip apper;
+    private float time = 1.0f;
+    public AudioClip apperSound;
+    public GameObject next;
 
-    void Start()
-    {
-        currentFruit = cherry;
-    }
+    const float spaceDelay = 1.0f;
 
     void Update()
     {
-        spaceDelay -= Time.deltaTime;
+        time -= Time.deltaTime;
         //ad movement
         if(transform.position.x < maxX)
         {
@@ -31,7 +25,7 @@ public class Player : MonoBehaviour
                 transform.position += new Vector3(1, 0, 0) * Time.deltaTime * speed;
             }
         }
-        if(transform.position.x > minX)
+        if(transform.position.x > -maxX)
         {
             if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
             {
@@ -39,39 +33,16 @@ public class Player : MonoBehaviour
             }
         }
         //space key
-        if (spaceDelay < 0 && Input.GetKeyDown(KeyCode.Space))
+        if (time < 0 && Input.GetKeyDown(KeyCode.Space))
         {
-            spaceDelay = 1.0f;
-            //currentFruitのrigidbodyをkinematicをfalseにする
-            //currentFruit.GetComponent<Rigidbody2D>().isKinematic = false;
+            time = spaceDelay;
             transform.position += new Vector3(plus, 0, 0) * Time.deltaTime * speed;
             plus *= -1;
             //currentFruitの位置に生成
-            Instantiate(currentFruit, transform.position, transform.rotation);
+            Instantiate(FruitsList[NextFruit.nextFruitID], transform.position, transform.rotation);
             //audio
-            AudioSource.PlayClipAtPoint(apper, transform.position);
-
-            //cherry, orange, kakiからランダムで1つ選ぶ
-            int random = Random.Range(0, 3);
-            if (random == 0)
-            {
-                // Instantiate(cherry, transform.position, transform.rotation);
-                // //rigidbodyをkinematicにする
-                // cherry.GetComponent<Rigidbody2D>().isKinematic = true;
-                currentFruit = cherry;
-            }
-            else if (random == 1)
-            {
-                // Instantiate(orange, transform.position, transform.rotation);
-                // orange.GetComponent<Rigidbody2D>().isKinematic = true;
-                currentFruit = orange;
-            }
-            else
-            {
-                // Instantiate(kaki, transform.position, transform.rotation);
-                // kaki.GetComponent<Rigidbody2D>().isKinematic = true;
-                currentFruit = kaki;
-            }
+            AudioSource.PlayClipAtPoint(apperSound, transform.position);
+            next.GetComponent<NextFruit>().Change();
         }
     }
 }

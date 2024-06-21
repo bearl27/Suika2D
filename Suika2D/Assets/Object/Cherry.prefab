@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 6466972930142756727}
   - component: {fileID: 8149545890068621119}
   - component: {fileID: 3546746672705249401}
-  - component: {fileID: 5972406704149290279}
-  - component: {fileID: -2602582079812388564}
+  - component: {fileID: 5022063403594466967}
+  - component: {fileID: 4207757969157450504}
   m_Layer: 0
   m_Name: Cherry
   m_TagString: cherry
@@ -150,7 +150,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.8
---- !u!114 &5972406704149290279
+--- !u!114 &5022063403594466967
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -159,12 +159,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6341863991818897226}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3504ff41bad7471ebbb06b0e05a33df, type: 3}
+  m_Script: {fileID: 11500000, guid: b145a5ce5c3a04938a40fb60346bc506, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Kaki: {fileID: 2479108315320362895, guid: 96259e9a8fee1496296692fbaf7992aa, type: 3}
+  NextFruit: {fileID: 2479108315320362895, guid: 96259e9a8fee1496296692fbaf7992aa, type: 3}
   collisionSound: {fileID: 8300000, guid: c23a5c88e8eb24161acdb536c4aa4e8d, type: 3}
---- !u!114 &-2602582079812388564
+  socreAddNum: 10
+--- !u!114 &4207757969157450504
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
